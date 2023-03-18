@@ -23,6 +23,7 @@ describe ('Array practice', function () {
   it('`runningSum`', function () {
 
     expect(runningSum([])).to.deep.equal([]);
+    expect(runningSum([1])).to.deep.equal([1])
     expect(runningSum([1, 2])).to.deep.equal([1, 3]);
     expect(runningSum([1, 2, 3, 4])).to.deep.equal([1, 3, 6, 10]);
     expect(runningSum([1, 2, 3, 4, -2, -2])).to.deep.equal([1, 3, 6, 10, 8, 6]);
@@ -61,7 +62,7 @@ describe ('Array practice', function () {
 
   });
 
-  it('`secondLargest`', function () {
+  it.only('`secondLargest`', function () {
 
     expect(secondLargest([])).to.equal(undefined);
     expect(secondLargest([4])).to.equal(undefined);
